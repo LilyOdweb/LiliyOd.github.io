@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Rock Papaer Scissors Game</title>
+		<link rel="stylesheet" href="style.css"/>
+		<meta charset="UTF-8">
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+<script>
+        let userchoice=0;
+        let computerchoice=0;
+        function assignChoice (choice){
+        if(userchoice===computerchoice){
+          return 'It's a tie';
+        }
+        else if (userchoice==="rock" && computerchoice==="scissors"){
+        return 'user has won';
+        }
+        else{
+        return 'computer has won';
+
+        }
+        else if(userchoice==="paper" && computerchoice==="rock"){
+        return 'user has won';
+        }
+        else{
+        return'computer has won';
+        }
+
+      document.getElementById("computerchoice").innerHTML=computerchoice;
+      document.getElementById("userchoice").innerHTML=userchoice;
+        }
+       </script>
+	</head>
+	<body>
+        <div>
+		<!--Content tags go here-->
+        <h1 id="RPSGame"> Play now to win!</h1>
+        </div>
+        <div>
+        <h1> User Vs Computer</h1>
+        </div>
+        <div>
+        <h2 id="Computerchoice"></h2>
+        <h2 id ="Userchoice"></h2>
+        <h2>Result</h2>
+        </div>
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+
+	</body>
+    </html>
