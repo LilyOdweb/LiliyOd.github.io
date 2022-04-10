@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>lyrics of 99 bottles of beer</title>
+		<script>
+				function bottlesOfbeer(){
+				var bottles;
+				var bottlesRemaining;
+				for(i=99;i>=1;i--){
+				if(i==1){
+				bottles="bottle";
+				bottlesRemaining="No more bottles of beer on the wall";
+				}else{
+				bottles="bottles";
+				bottlesRemaining=i-1+"bottles of beer on the wall";
+				}
+
+
+				console.log(i+""+bottles+"of beer on the wall.");
+				 if(i<99){
+				console.log("");
+				console.log(i+""+bottles+"of beer on the wall.");
+				}
+				console.log(i+""+bottles+"of beer.");
+				console.log("Take one down");
+				console.log("Pass it around");
+				 if(i==1){
+				console.log("No more bottles of beer on the wall");
+				}
+				}
+				}
+				console.log(bottlesOfbeer());
+				</script>
+
+    </head>
+		<meta charset="UTF-8">
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+
+	<body>
+
+		<!--Content tags go here-->
+
+
+	</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Webpage Template</title>
+
+		<meta charset="UTF-8">
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+	function multiplyBy(){
+	NumSubj=document.getElementById("InputNumber").value;
+	StudMark=document.getElementBId("InputMarks").value;
+	documeent.getElementById("result").innerHTML=NumSubj*StudMark;
+                 if(result>90){
+                 result 'A';
+                 }
+                else if(result >80){
+               result 'B';
+               }
+              else if(result >70){
+              result 'C';
+              }
+              else if(result>65){
+               result 'D';
+               }
+             else{
+             return 'F';
+            }
+}
+</script>
+	</head>
+	<body>
+
+		<!--Content tags go here-->
+    <form>
+    <div id="studentScore">
+    <h1> Student results</h1>
+    StudentName:<br><input type="text" name="name"/>
+    <br/>
+    Number of subjects:<br><input type="number" Id="InputNumber"/>
+    <br/>
+
+
+    Student marks<br><input type="number" Id="InputMarks"/>
+    <br/>
+    <input type="button" onClick="multiplyBy()" value="Click"/>
+    <br/>
+    </form>
+    <p> The result is:<br/>
+    <span id="result"></span></p>
+
+	</body>
+
+</html>
