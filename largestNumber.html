@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Lab 10 largest number</title>
+        <link rel="stylesheet" href="web10style.css"/>
+		<meta charset="UTF-8">
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script>
+        function largest(arr){
+
+		var arr=[2,15,88,105,3,6];
+		var largestNumber=0;
+		for(var i=0;i<=arr.length;i++){
+		if(arr[i]>largestNumber){
+		    largestNumber=arr[i];
+		}
+		}
+		}
+		console.log(largestNumber);
+		</script>
+		</head>
+
+	<body>
+
+		<!--Content tags go here-->
+
+<p>Click on the button to loop.</p>
+<button onclick="largest()">Try me</button>
+<p id="demo"></p>
+	</body>
+
+</html>
